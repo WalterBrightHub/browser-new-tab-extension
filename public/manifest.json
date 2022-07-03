@@ -5,5 +5,8 @@
  "manifest_version": 3,
   "name": "walter's extension",
   "description": "walter's extension",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "icons": {
+    "128": "/images/new-tab-128.png"
+  }
 }
