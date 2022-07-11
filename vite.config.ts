@@ -4,8 +4,12 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build:{
-    outDir:'dist/walter-extension',
+  server: {
+    host: '0.0.0.0',
+    port: 12700
+  },
+  build: {
+    outDir: 'dist/walter-extension',
   },
   plugins: [vue()],
   resolve: {

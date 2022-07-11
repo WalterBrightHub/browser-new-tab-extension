@@ -1,10 +1,9 @@
 <script setup lang="ts">
 
-import BlueScreen from './components/BlueScreen.vue';
 </script>
 
 <template>
-  <BlueScreen />
+  <RouterView />
 </template>
 
 <style>
