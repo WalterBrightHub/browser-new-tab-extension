@@ -5,7 +5,10 @@ import axios from 'axios'
 const key = import.meta.env.VITE_QWEATHER_KEY
 
 const getCurrentPosition = (): Promise<GeolocationPosition> => new Promise((resolve, reject) => {
-  navigator.geolocation.getCurrentPosition(resolve, reject)
+  navigator.geolocation.getCurrentPosition(resolve, reject, {
+    timeout: 5000,
+    enableHighAccuracy: true,
+  })
 })
 
 
